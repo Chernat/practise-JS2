@@ -1,4 +1,4 @@
-var num = fizzBuzzNums(+prompt('Введите чиcло',''));
+var num = fizzBuzzNums(+prompt('Введите чиcло (Выводит FizzBuzz)',''));
 
 function fizzBuzzNums(num) {
   for (var i = 0; i <= num; i++) {
