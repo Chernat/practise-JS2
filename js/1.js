@@ -2,9 +2,6 @@ var num = numMore100();
 
 function numMore100() {
   do {
-    var num = +prompt('Введите чиcло больше 100', '');
-    while (isNaN(num)) {
-      num = +prompt('Чиcло!!', '');
-    }
-  } while (100 >= num && num != null);
-};
+    var num = prompt('Введите чиcло больше 100', '');
+  } while (num && (num <= 100 || !(!isNaN(parseFloat(num)) && isFinite(num))))
+}
